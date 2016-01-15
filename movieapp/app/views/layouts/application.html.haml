@@ -24,13 +24,18 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          = link_to "WDIMDb", movies_path, class: "navbar-brand"
+          %a{class: "navbar-brand", href: "index"}
+            = link_to (image_tag "wdimdb-sm.png"), movies_path, class: "navbar-brand"
         #navbar.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li.active
-              = link_to "Home", movies_path
+              = link_to "Movies", movies_path
             %li
-              = link_to "Users", "#"
+              = link_to "Sign In", new_user_session_path
+            %li
+              = link_to "Sign Up", new_user_registration_path
+            %li
+              = link_to "Sign Out", destroy_user_session_path
     .container
       - flash.each do |name, msg|
         = content_tag :div, class: "alert alert-#{name == :error ? "danger" : "success" } alert-dismissable", role: "alert" do
