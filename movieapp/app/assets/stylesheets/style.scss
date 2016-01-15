@@ -1,0 +1,13 @@
+.movie_container{
+  float: left;
+  background: #5bc0de;
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  img{
+    width: 150px;
+    margin: 0 auto;
+  }
+}

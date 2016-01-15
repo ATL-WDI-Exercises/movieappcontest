@@ -1,0 +1,19 @@
+%h1 Add A Movie!
+
+= form_for @movie do |m|
+  = m.label :title
+  = m.text_field :title
+  %br/
+  = m.label :genre
+  = m.text_field :genre
+  %br/
+  = m.label :year
+  = m.text_field :year
+  %br/
+  = m.label :synopsis
+  = m.text_field :synopsis
+  %br/
+  = m.label :pic_url
+  = m.text_field :pic_url
+  %br/
+  = m.submit
