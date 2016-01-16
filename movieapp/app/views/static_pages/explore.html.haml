@@ -1,5 +1,3 @@
-%h1 Movie App
-
 - @movies.each do |movie|
   .movie_container
     = image_tag movie.pic_url
@@ -8,7 +6,3 @@
     %div= "Genre: #{movie.genre}"
     %div= "Year: #{movie.year}"
     %div= "Synopsis: #{movie.synopsis}"
-    = link_to "Edit", "./movies/#{movie.id}/edit"
-    = link_to "Delete", movie, method: :delete, data: {confirm: 'Are you sure?'}
-
-= button_to "New", new_path, {:method => :get, class: 'btn-success'}

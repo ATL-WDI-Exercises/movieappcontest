@@ -1,17 +1,17 @@
 class MoviesController < ApplicationController
   def index
-    all_movies = Movie.all
+    all_movies = Movie.where(user_id: current_user.id)
     @movies = all_movies.order(:title)
   end
 
   def new
-    @movie = Movie.new
+    @movie = current_user.movies.new
   end
 
   def create
     movie = params.require(:movie)
             .permit(:title, :genre, :year, :synopsis, :pic_url)
-    Movie.create(movie)
+    current_user.movies.create(movie)
     redirect_to '/movies'
   end
 

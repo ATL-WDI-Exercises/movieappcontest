@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'static_pages#home'
+
+  get '/explore', to: 'static_pages#explore', as: :explore
+
   get '/movies', to: 'movies#index', as: :movies
 
   get '/movies/new', to: 'movies#new', as: :new
