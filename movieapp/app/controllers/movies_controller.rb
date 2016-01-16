@@ -5,6 +5,8 @@ class MoviesController < ApplicationController
   end
 
   def new
+    puts params[:q]
+    @result = Movie.search(params[:q])
     @movie = current_user.movies.new
   end
 
@@ -13,6 +15,10 @@ class MoviesController < ApplicationController
             .permit(:title, :genre, :year, :synopsis, :pic_url)
     current_user.movies.create(movie)
     redirect_to '/movies'
+  end
+
+  def confirm
+
   end
 
   def show

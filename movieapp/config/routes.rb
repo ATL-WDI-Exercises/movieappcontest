@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/movies/new', to: 'movies#new', as: :new
 
-  post '/movies', to: 'movies#create'
+  post '/movies', to: 'movies#create', as: :create
 
   get 'movies/:id', to: 'movies#show', as: :movie
 

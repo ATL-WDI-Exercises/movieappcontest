@@ -1,0 +1,15 @@
+.row
+  -@result.each do |result|
+    .col-sm-6.col-md-4
+      .thumbnail
+        .thumbnail-img
+          =link_to (image_tag "#{result.poster}"), "#"
+        .caption
+          %h5= result.title
+          %p= result.year
+          - new_movie = Movie.result(result.title)
+          %p= new_movie.plot
+          =form_tag (create_path)
+            =hidden_field_tag :title, :value => new_movie.title
+            =submit_tag "Add to Favorites"
+
