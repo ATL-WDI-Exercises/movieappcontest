@@ -1,0 +1,8 @@
+%h1= @movie.title
+%h2= @movie.genre
+%h2= @movie.year
+%h2= @movie.synopsis
+= image_tag(@movie.pic_url)
+
+= link_to "Edit", edit_path(@movie.id)
+= link_to "Delete", @movie, method: :delete, data: {confirm: 'Are you sure?'}

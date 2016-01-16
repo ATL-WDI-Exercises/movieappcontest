@@ -1,42 +1,38 @@
-# movieappcontest
-#Move app Contest
-#Requirments
+#Movie App Contest
+##Requirements
+Create a movie tracker app that allows a user to enter their favorite movies.
 
-create an movie tracker app
-that alllows a user to enter thier favorite movies
-should have the following info
+Should have the following info:
 
-Title
-Genre
-Year
-Synopis 
-Picture(can take an url)
-Add to favorites
+- Title
+- Genre
+- Year
+- Synopsis
+- Picture (can take an url)
+- Add to favorites
 
-you need the appropieate CRUD views
-
-and a favoriate view wit CRUD
+You need the appropriate CRUD views and a favorate view with CRUD
 
 
 
-#Rules:
+##Rules:
 
-You must write your own code.  Helping each other is ok.
-No scaffolding. No Rescource routing.
+- You must write your own code.  Helping each other is ok.
+- No scaffolding. No resource routing.
+- You must use ALL of the following:
+  - Rails
+  - Active record
+  - Postgres
+  - Bootstrap
+  - You must submit an ERD for your database
+  - The app must support full CRUD
 
-You must use All of the following
-Rails
-Acitive record
-postgress 
-Bootstrap
-you must submiy an ERD for your database 
-The app must support full CRUD
+##Submission:
+  You must host your app on Heroku
 
-submittion:
-You must host your app on heroku
-you must have a github repo for reviewing of your code
+  You must have a Github repo for reviewing of your code
 
-Bonus points for:
-Test scripts
-Wireframes
-A video demo of your app working
+##Bonus points for:
+  - Test scripts
+  - Wireframes
+  - A video demo of your app working
