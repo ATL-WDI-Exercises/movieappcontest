@@ -39,7 +39,7 @@
                 = link_to "Sign In", new_user_session_path
               %li
                 = link_to "Sign Up", new_user_registration_path
-    .container
+    .container.content
       - flash.each do |name, msg|
         = content_tag :div, class: "alert alert-#{name == :error ? "danger" : "success" } alert-dismissable", role: "alert" do
           %button.close{type: "button", data: {dismiss: "alert"} }

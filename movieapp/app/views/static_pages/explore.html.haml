@@ -1,8 +1,1 @@
-- @movies.each do |movie|
-  .movie_container
-    = image_tag movie.pic_url
-    %div= "ID: #{movie[:id]}"
-    = link_to "Title: #{movie.title}", movie
-    %div= "Genre: #{movie.genre}"
-    %div= "Year: #{movie.year}"
-    %div= "Synopsis: #{movie.synopsis}"
+=render partial: 'movies/display'

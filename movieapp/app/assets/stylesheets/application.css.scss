@@ -1,5 +1,11 @@
-body {
-  background: rgba(112, 30, 30, 1)
+@import "flatly-variables.scss";
+@import "bootstrap-variables.scss";
+@import "bootstrap-sprockets.scss";
+@import "bootstrap.scss";
+@import "flatly.scss";
+
+.content{
+  margin-top: 70px;
 }
 
 .navbar-brand {
