@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MoviesChallenge</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<header>
+  <ul id='nav'>
+    <li>Movie Database</li>
+    <li><a href='/movies/new'>Add Movie</a></li>
+    <li><a href='/'>Home</a></li>
+    <% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <li>
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
+  <a href='/users/favorites'>Favorites</a>
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %></li>
+
+  </ul>
+  <br>
+</header>
+
+<body>
+<% if notice %>
+  <p><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p><%= alert %></p>
+<% end %>
+<%= yield %>
+
+</body>
+</html>

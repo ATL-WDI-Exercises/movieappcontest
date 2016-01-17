@@ -1,0 +1,7 @@
+<br>
+<br>
+<h1>Movie Title: <%= @movies.find(@favorite.movie_id).title %></h1>
+<h1>Movie ID: <%= @favorite.movie_id %></h1>
+<h1>User ID: <%= @favorite.user_id %></h1>
+
+<%= link_to "Delete this Favorite!", @favorite, method: :delete, data: { confirm: 'Are you sure you want to delete it?' } %>

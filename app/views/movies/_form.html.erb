@@ -1,0 +1,32 @@
+<div id='form'>
+<%= form_for @movie do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :genre %><br>
+    <%= f.text_field :genre %>
+  </p>
+
+  <p>
+    <%= f.label :year %><br>
+    <%= f.text_field :year %>
+  </p>
+
+  <p>
+    <%= f.label :synopsis %><br>
+    <%= f.text_field :synopsis %>
+  </p>
+
+  <p>
+    <%= f.label :picture %><br>
+    <%= f.text_field :picture %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+</div>
