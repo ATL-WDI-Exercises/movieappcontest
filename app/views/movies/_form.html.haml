@@ -2,29 +2,29 @@
 = form_for @movie, html: {class: "form-horizontal"} do |m|
   .form-group
     = m.label :title, class: "col-sm-2 control-label"
-    .col-sm-5
+    .col-sm-8
       = m.text_field :title, class: "form-control"
   %br/
   .form-group
     = m.label :genre, class: "col-sm-2 control-label"
-    .col-sm-5
+    .col-sm-8
       = m.text_field :genre, class: "form-control"
   %br/
   .form-group
     = m.label :year, class: "col-sm-2 control-label"
-    .col-sm-5
+    .col-sm-8
       = m.text_field :year, class: "form-control"
   %br/
   .form-group
     = m.label :synopsis, class: "col-sm-2 control-label"
-    .col-sm-5
+    .col-sm-8
       = m.text_area :synopsis, class: "form-control"
   %br/
   .form-group
     = m.label :pic_url, class: "col-sm-2 control-label"
-    .col-sm-5
+    .col-sm-8
       = m.text_field :pic_url, class: "form-control"
   %br/
   .form-group
-    .col-sm-offset-2.col-sm-5
+    .col-sm-offset-2.col-sm-8
       = m.submit "Submit", :class => "btn btn-default"

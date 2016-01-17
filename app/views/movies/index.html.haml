@@ -1,6 +1,7 @@
-%h1 Movie App
+.indexTop
+  %h1 Your Favorite Movies
+  = button_to "Add a Movie", new_path, {:method => :get, class: 'btn btn-success pull-right'}
 =render partial: 'display'
 
 
 
-= button_to "New", new_path, {:method => :get, class: 'btn-success pull-right'}

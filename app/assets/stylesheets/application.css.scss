@@ -1,11 +1,14 @@
-@import "flatly-variables.scss";
 @import "bootstrap-variables.scss";
 @import "bootstrap-sprockets.scss";
+@import "flatly-variables.scss";
 @import "bootstrap.scss";
 @import "flatly.scss";
 
+
 .content{
   margin-top: 70px;
+  position: relative;
+
 }
 
 .navbar-brand {
@@ -45,4 +48,89 @@
 
 #movie_synopsis {
     height: 150px;
+}
+
+
+.alert{
+  margin-top: 15px;
+  opacity: 0.7;
+  width: 50vw;
+  padding-right: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%)
+}
+
+.landingPage{
+  width: 50%;
+  h1{
+    font-size: 4em;
+  }
+  h2{
+    font-size: 3em;
+  }
+  p {
+    color: #D50000;
+    font-size: 2rem
+  }
+  .btn {
+    margin: 10px 15px
+  }
+}
+
+
+.showMovie{
+  border: 5px solid lighten(#000, 50%);
+  background: darken(#fff, 30%);
+  height: 70vh;
+  * {
+    float: left;
+  }
+  .synopsis{
+    width: 70%;
+  }
+}
+
+#my_popup {
+  color: rgba(0,0,0,0.87);
+  position: relative;
+  width: 40%;
+  background: #B0BEC5;
+  border: 5px solid #37474F;
+  border-radius: 25px;
+  h1{
+    margin: 15px;
+  }
+  a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  .btn{
+    margin: 0
+  }
+}
+
+.searchOmdb {
+  position: relative;
+  background: red;
+  padding: 10px;
+  .my_popup_open{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+  }
+}
+
+.indexTop {
+  position: relative;
+  .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+  }
 }
