@@ -1,10 +1,12 @@
 .showMovie
   = image_tag(@movie.pic_url)
-  %h1= @movie.title
-  %h2= @movie.genre
-  %h2= @movie.year
-  .synopsis= @movie.synopsis
-  - if @movie.user_id == current_user.id
-    = link_to "Edit", edit_path(@movie.id), class: 'btn btn-success button-md'
-    = link_to "Delete", @movie, method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger button-md'
+  .text
+    %h1= @movie.title
+    %h2= @movie.genre
+    %h2= @movie.year
+    .synopsis= @movie.synopsis
+    .buttons
+      - if @movie.user_id == current_user.id
+        = link_to "Edit", edit_path(@movie.id), class: 'btn btn-success button-md'
+        = link_to "Delete", @movie, method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger button-md'
 

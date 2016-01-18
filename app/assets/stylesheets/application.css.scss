@@ -4,6 +4,9 @@
 @import "bootstrap.scss";
 @import "flatly.scss";
 
+body {
+  background: rgb(214,214,214);
+}
 
 .content{
   margin-top: 70px;
@@ -81,13 +84,22 @@
 
 .showMovie{
   border: 5px solid lighten(#000, 50%);
+  border-radius: 10px ;
   background: darken(#fff, 30%);
   height: 70vh;
-  * {
-    float: left;
+  display: flex;
+  justify-content: center;
+  .text {
+    width: 80%;
+  }
+  img {
+    margin: 15px;
   }
   .synopsis{
     width: 70%;
+  }
+  .buttons{
+    margin-top: 20px;
   }
 }
 
@@ -115,7 +127,10 @@
 
 .searchOmdb {
   position: relative;
-  background: red;
+  color: rgba(0,0,0,0.87);
+  border: 5px solid #37474F;
+  background: #B0BEC5;
+  border-radius: 25px;
   padding: 10px;
   .my_popup_open{
     position: absolute;

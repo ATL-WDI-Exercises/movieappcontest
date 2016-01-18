@@ -17,10 +17,6 @@ class MoviesController < ApplicationController
     redirect_to '/movies'
   end
 
-  def confirm
-
-  end
-
   def show
     @movie = Movie.find(params[:id])
   end
