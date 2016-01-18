@@ -1,3 +1,14 @@
+#WDI IMDb
+
+Created using rails and utilizing the OMDb database for new title search.
+
+Users can explore movies added by other users, and keep track of their own favorite movies.
+Once a user signs up, they can add movies via search or through a custom form by clicking the + button in the menu bar.
+
+Created using Devise for user log-in and authentication and bootstrap-sass to assist with styling.
+
+
+
 #Movie App Contest
 ##Requirements
 Create a movie tracker app that allows a user to enter their favorite movies.
