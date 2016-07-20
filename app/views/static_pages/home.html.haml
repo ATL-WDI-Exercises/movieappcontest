@@ -1,0 +1,25 @@
+:css
+  body {
+    background: url(#{image_path 'movie-background.jpg'});
+  }
+  h1{
+  color: #D32F2F;
+  }
+  h2 {
+
+  }
+
+
+.landingPage
+  %h1 Keep Track of
+  %h1 Your Favorite Movies
+  %br/
+  %p Duis ex brisket minim shoulder. Turkey frankfurter magna flank. Laboris aute andouille id quis ribeye laborum officia exercitation in. Dolor aliquip andouille ex meatball, brisket beef ribs non ut. Short ribs nisi pork chop lorem venison aliquip filet mignon landjaeger. Pariatur sed voluptate qui pork loin cupidatat ipsum boudin rump shoulder adipisicing.
+  %br/
+  %p Laboris aute andouille id quis ribeye laborum officia exercitation in. Dolor aliquip andouille ex meatball, brisket beef ribs non ut. Short ribs nisi pork chop lorem venison aliquip filet mignon landjaeger. Pariatur sed voluptate qui pork loin cupidatat ipsum boudin rump shoulder adipisicing.
+  %br/
+  %br/
+
+  - if !user_signed_in?
+    = link_to "Sign In!", new_user_session_path, {class: 'btn btn-primary btn-lg'}
+    = link_to "Sign Up", new_user_registration_path, {class: 'btn btn-primary btn-lg'}

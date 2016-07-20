@@ -1,0 +1,12 @@
+.row
+  - @movies.each do |movie|
+    =link_to movie do
+      .col-sm-6.col-md-4
+        .thumbnail
+          .thumbnail-img
+            =link_to (image_tag "#{movie.pic_url}"), movie
+          .caption
+            %div= "Title: #{movie.title}"
+            %div= "Genre: #{movie.genre}"
+            %div= "Year: #{movie.year}"
+

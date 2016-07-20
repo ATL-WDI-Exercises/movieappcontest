@@ -1,0 +1,8 @@
+- if @movie.user_id == current_user.id
+  %h1 Edit A Movie!
+  =render partial: "form"
+- else
+  .jumbotron
+    %h1 Access Denied
+    %h2 Can't hack this
+    = image_tag "https://vaminidotworpressdotcomdotorg.files.wordpress.com/2013/05/hammertime-o.gif"
