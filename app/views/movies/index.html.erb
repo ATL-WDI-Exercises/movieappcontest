@@ -1,0 +1,27 @@
+<% @movies.each do |movie| %>
+
+  <div id='movies'>
+
+  <div id='movies_info'>
+
+    <br>
+    <div class='headplate'>Title:</div> <a href='/movies/<%= movie.id %>'><%= movie.title %></a><br>
+    <br>
+    <div class='headplate'>Genre:</div> <%= movie.genre %>
+    <div class='headplate'>Year:</div> <%= movie.year %>
+    <div class='headplate'>Synopsis:</div> <div id='synopsis'><%= movie.synopsis %></div><br>
+  </div>
+
+  <div id='movies_card'>
+    <img class='movieposter' src="<%= movie.picture %>"/><br>
+  </div>
+</div>
+
+<% end %>
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+<br>
+<h1>Favorites:</h1>
+<% @favorites.each do |favorite| %>
+<div id='movies'>
+
+  <div id='movies_info'>
+
+    <br>
+    <div class='headplate'>Title:</div> <a href='/users/favorites/<%= favorite.id %>'><%= @movies.find(favorite.movie_id).title %></a><br>
+    <br>
+    <div class='headplate'>Genre:</div> <%= @movies.find(favorite.movie_id).genre %>
+    <div class='headplate'>Year:</div> <%= @movies.find(favorite.movie_id).year %>
+    <div class='headplate'>Synopsis:</div> <div id='synopsis'><%= @movies.find(favorite.movie_id).synopsis %></div><br>
+  </div>
+
+  <div id='movies_card'>
+    <img class='movieposter' src="<%= @movies.find(favorite.movie_id).picture %>"/><br>
+  </div>
+</div>
+
+<% end %>
+
+
+
+
+
+
