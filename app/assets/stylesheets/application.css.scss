@@ -1,0 +1,151 @@
+@import "bootstrap-variables.scss";
+@import "bootstrap-sprockets.scss";
+@import "flatly-variables.scss";
+@import "bootstrap.scss";
+@import "flatly.scss";
+
+body {
+  background: rgb(214,214,214);
+}
+
+.content{
+  margin-top: 70px;
+  position: relative;
+
+}
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  img{
+  width: 150px;
+  }
+}
+
+
+
+.movie_container{
+  float: left;
+  background: #5bc0de;
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  img{
+    width: 150px;
+    margin: 0 auto;
+  }
+}
+
+.thumbnail {
+  height: 450px;
+}
+
+.thumbnail-img {
+  height: 300px;
+}
+.thumbnail a img{
+  max-width: 200px;
+}
+
+#movie_synopsis {
+    height: 150px;
+}
+
+
+.alert{
+  margin-top: 15px;
+  opacity: 0.7;
+  width: 50vw;
+  padding-right: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%)
+}
+
+.landingPage{
+  width: 50%;
+  h1{
+    font-size: 4em;
+  }
+  h2{
+    font-size: 3em;
+  }
+  p {
+    color: #D50000;
+    font-size: 2rem
+  }
+  .btn {
+    margin: 10px 15px
+  }
+}
+
+
+.showMovie{
+  border: 5px solid lighten(#000, 50%);
+  border-radius: 10px ;
+  background: darken(#fff, 30%);
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  .text {
+    width: 80%;
+  }
+  img {
+    margin: 15px;
+  }
+  .synopsis{
+    width: 70%;
+  }
+  .buttons{
+    margin-top: 20px;
+  }
+}
+
+#my_popup {
+  color: rgba(0,0,0,0.87);
+  position: relative;
+  width: 40%;
+  background: #B0BEC5;
+  border: 5px solid #37474F;
+  border-radius: 25px;
+  h1{
+    margin: 15px;
+  }
+  a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  .btn{
+    margin: 0
+  }
+}
+
+.searchOmdb {
+  position: relative;
+  color: rgba(0,0,0,0.87);
+  border: 5px solid #37474F;
+  background: #B0BEC5;
+  border-radius: 25px;
+  padding: 10px;
+  .my_popup_open{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+  }
+}
+
+.indexTop {
+  position: relative;
+  .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+  }
+}

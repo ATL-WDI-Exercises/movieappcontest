@@ -1,42 +1,49 @@
-# movieappcontest
-#Move app Contest
-#Requirments
+#WDI IMDb
 
-create an movie tracker app
-that alllows a user to enter thier favorite movies
-should have the following info
+Created using rails and utilizing the OMDb database for new title search.
 
-Title
-Genre
-Year
-Synopis 
-Picture(can take an url)
-Add to favorites
+Users can explore movies added by other users, and keep track of their own favorite movies.
+Once a user signs up, they can add movies via search or through a custom form by clicking the + button in the menu bar.
 
-you need the appropieate CRUD views
-
-and a favoriate view wit CRUD
+Created using Devise for user log-in and authentication and bootstrap-sass to assist with styling.
 
 
 
-#Rules:
+#Movie App Contest
+##Requirements
+Create a movie tracker app that allows a user to enter their favorite movies.
 
-You must write your own code.  Helping each other is ok.
-No scaffolding. No Rescource routing.
+Should have the following info:
 
-You must use All of the following
-Rails
-Acitive record
-postgress 
-Bootstrap
-you must submiy an ERD for your database 
-The app must support full CRUD
+- Title
+- Genre
+- Year
+- Synopsis
+- Picture (can take an url)
+- Add to favorites
 
-submittion:
-You must host your app on heroku
-you must have a github repo for reviewing of your code
+You need the appropriate CRUD views and a favorate view with CRUD
 
-Bonus points for:
-Test scripts
-Wireframes
-A video demo of your app working
+
+
+##Rules:
+
+- You must write your own code.  Helping each other is ok.
+- No scaffolding. No resource routing.
+- You must use ALL of the following:
+  - Rails
+  - Active record
+  - Postgres
+  - Bootstrap
+  - You must submit an ERD for your database
+  - The app must support full CRUD
+
+##Submission:
+  You must host your app on Heroku
+
+  You must have a Github repo for reviewing of your code
+
+##Bonus points for:
+  - Test scripts
+  - Wireframes
+  - A video demo of your app working

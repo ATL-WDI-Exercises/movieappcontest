@@ -1,0 +1,40 @@
+:javascript
+  $(document).ready(function(){
+    $('#my_popup').hide();
+
+    $('.navbar-right li a').hover(function(){
+      $(this).parent().addClass('active');
+      console.log('test');
+    }, function(){
+      $(this).parent().removeClass('active');
+    });
+
+    $('.my_popup_open').click(function(){
+      $('#my_popup').show();
+    });
+
+    $('#my_popup').popup({
+      color: '#aaa'});
+  });
+
+
+.searchOmdb
+  %h1 Add A Movie!
+
+  = form_tag("new", method: 'get') do
+    .form-group
+      =label_tag(:q, "Search by Title:   ")
+      =text_field_tag :q, "", class: 'form-control'
+    %br/
+    =submit_tag "Search", class: 'btn btn-default'
+  %button{class: "my_popup_open"} Enter manually
+
+- if params.has_key?(:q)
+  =render partial: "results", :result => @result
+
+
+
+#my_popup
+  %h1 Add A Custom Movie
+  = render partial: "form"
+  %a{class: "my_popup_close glyphicon glyphicon-remove"}
